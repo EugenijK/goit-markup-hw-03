@@ -106,6 +106,7 @@ body {
 .site-nav {
     display: flex;
     align-items: center;
+    margin-left: 93px;
 }
 .site-nav.list {
     padding-left: 0;
@@ -115,13 +116,15 @@ body {
     letter-spacing: 0.02em;
     
 }
-.site-nav.list .item + .item {
+  
+.site-nav .item + .item {
  margin-left: 50px;
 }
-.site-nav.list .item:first-child {
+/*
+.site-nav .item:first-child {
  margin-left: 93px;
 }
-
+*/
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -148,7 +151,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-.mail-nav.list .item + .item {
+.mail-nav .item + .item {
     margin-left: 50px;
 }
 .mail-nav .link {
@@ -241,9 +244,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     margin-top: 0;
-    margin-bottom: 0;
 }
 .idea .text {
     color: var(--text-color);
@@ -395,7 +397,6 @@ body {
     justify-content: center;
     list-style-type: none;
     padding-left: 0;
-    padding-top: 94px;
     margin-bottom: 50px;
     margin-top: 0;
 }
@@ -403,9 +404,11 @@ body {
     margin-left: 8px;
 }
 /* examples  */
-.container.portfolio {
+.portfolio-section {
     padding-bottom: 94px;
+    padding-top: 94px;
 }
+
 .container.examples {
     margin-bottom: 94px;
 }
@@ -425,9 +428,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 0;
 
 }
@@ -437,9 +437,6 @@ body {
     line-height: 1.87;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
 
 }
 .examples-img {
@@ -452,4 +449,7 @@ body {
     margin-bottom: 30px;
     border: 1px solid var(--border-content-portfolio);
     border-top: hidden;
+}
+.examples-stack {
+    padding: 20px 24px
 }
